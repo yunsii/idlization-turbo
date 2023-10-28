@@ -42,7 +42,7 @@ export function useHeavyTaskTurbo(id: string | number) {
       };
 
       // task running && not timeout (reserve 2ms)
-      while (taskRunning() && timeEnd + 10 > Date.now()) {
+      while (taskRunning() && timeEnd > Date.now() + 2) {
         countCacheRef.current += 1;
         continue;
       }
