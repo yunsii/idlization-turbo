@@ -1,19 +1,19 @@
 "use client";
 
-import ShareThis from "@/components/ShareThis";
-import { useHeavyTask } from "@/hooks/heavy-tasks";
 import Image from "next/image";
+import ShareThisTurbo from "../../components/ShareThis/Turbo";
+import { useHeavyTaskTurbo } from "@/hooks/heavy-tasks";
 
-export default function Home() {
-  useHeavyTask(0);
-  useHeavyTask(1);
-  useHeavyTask(2);
-  useHeavyTask(3);
-  useHeavyTask(4);
+export default function Turbo() {
+  useHeavyTaskTurbo(0);
+  useHeavyTaskTurbo(1);
+  useHeavyTaskTurbo(2);
+  useHeavyTaskTurbo(3);
+  useHeavyTaskTurbo(4);
 
   return (
     <>
-      <ShareThis />
+      <ShareThisTurbo />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
